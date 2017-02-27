@@ -1,0 +1,52 @@
+{
+  "name": "mukipayz",
+  "version": "1.0.0",
+  "description": "awesomeness",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp watch",
+    "start": "node app.js",
+    "migrate": "knex migrate:latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukipuz/mukipayz.git"
+  },
+  "author": "D. Dwyer, J. Thorsten, M. Hottman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukipuz/mukipayz/issues"
+  },
+  "homepage": "https://github.com/mukipuz/mukipayz#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "cloudinary": "^1.4.1",
+    "cookie-session": "^2.0.0-alpha.1",
+    "dotenv": "^2.0.0",
+    "dwolla-node": "^1.1.3",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "formidable": "^1.0.17",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-util": "^3.0.7",
+    "imagemagick": "^0.1.3",
+    "knex": "^0.11.7",
+    "mailgun-js": "0.5",
+    "method-override": "^2.3.6",
+    "moment": "^2.14.1",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-dwolla": "^1.0.0",
+    "pg": "^6.0.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.72.0",
+    "slug": "^0.9.1",
+    "socket.io": "^1.4.8"
+  }
+}

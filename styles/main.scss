@@ -1,0 +1,45 @@
+@import "global"; //all page styling (*, body, html, etc.)
+
+//other imported files
+@import "flickity";
+@import "index";
+@import "menu";
+@import "cells";
+@import "error";
+
+
+//font imports
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Lato:300';
+//to use:
+    //Header / Headlines
+        //font-family: 'Comfortaa', cursive;
+    //Body text
+        //font-family: 'Lato', sans-serif;
+$header-font: 'Comfortaa', cursive;
+$body-font: 'Lato', sans-serif;
+
+//other styling here
+.mukipayz {
+  font-family: $header-font;
+  font-size: 100px;
+  color: #0075E1;
+}
+
+.p2p {
+  font-family: $body-font;
+}
+.footer{
+
+}
+.font1 {
+    font-family: $header-font
+}
+.font2 {
+  font-family:  $body-font;
+}
+.middle {
+  padding-left: 10%;
+}
+.right {
+  padding-left: 10%;
+}

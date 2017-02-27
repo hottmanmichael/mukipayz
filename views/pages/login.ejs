@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <% include ../partials/head %>
+    </head>
+
+    <body class="container">
+
+        <header>
+            <% include ../partials/header %>
+        </header>
+
+        <div class="row">
+
+            <% if (error) { %>
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    <%= error.message %>
+                    <p>
+                        <a href="/auth/signup"><%= error.signup %></a>
+                    </p>
+                </div>
+            <% } %>
+
+            <div class="col-md-12">
+
+                <form action='/auth/login' method='post'>
+                    <fieldset class="form-group">
+                        <label for="email" class="control-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+                        <div class="help-block with-errors"></div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="password ">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+                    </fieldset>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Log in!</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label for="">Not a user?</label>
+                <a href="/auth/signup" class="btn btn-success btn-block btn-lg">Sign up today!</a>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>
+
+    <%- include('../partials/ejsEnd') %>
